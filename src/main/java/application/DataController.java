@@ -38,10 +38,6 @@ public class DataController {
 		printData(dataList);
 	}
 
-	public List<CustomerData> getDataList() {
-		return this.dataList;
-	}
-	
 	/*
 	 * This method is calling the getLines-method in FileUtil, for accessing the
 	 * text-document. It is then calling the fromString-method in CustomerData,

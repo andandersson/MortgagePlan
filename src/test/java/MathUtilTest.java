@@ -26,9 +26,9 @@ public class MathUtilTest {
 	 *This method is testing that the method for rounding off
 	 * is worling correctly.
 	 */
+
 	@Test
 	public void testRound() {
-		
 		assertEquals((int) 4, math.roundOf(4.14) );
 		assertEquals((int) 5, math.roundOf(4.50) );
 		assertEquals((int) 4, math.roundOf(4.49) );

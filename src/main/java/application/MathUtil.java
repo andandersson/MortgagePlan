@@ -23,6 +23,9 @@ public class MathUtil {
 	private MathUtil() {
 	}
 
+	/*
+	* Getter for returning the only instance of the class.
+	 */
 	public static MathUtil getMath() {
 		return math;
 	}
@@ -31,7 +34,6 @@ public class MathUtil {
 	 * of one number raised to the power of another. The numbers
 	 * are inputs. 
 	 */
-
 
 	public static double calcExponent(double base, double power) {
 		exponent = base;	

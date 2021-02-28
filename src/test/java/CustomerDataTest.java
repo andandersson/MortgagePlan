@@ -12,6 +12,13 @@ public class CustomerDataTest {
 	private double totalLoan, interest;
 	private int years;
 	private String testString;
+
+	/*
+	*This method is testing an example-string, which is a direct copy
+	* of the first row in the txt-file. It is at first creating a
+	* CustomerData-object, and then asserting that it is getting the
+	* correct values of the string.
+	 */
 	
 	@Test
 	public void testFromString() {

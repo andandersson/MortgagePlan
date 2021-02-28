@@ -8,7 +8,8 @@ import java.util.Scanner;
 
 /*The only purpose of this class is scanning the text-file.
  * Since there are only one method, and the purpose of the class
- * will not change, it is of no reason to create objects.
+ * will not change, it is of no reason to create objects outside
+ * the class.
  * That is why the only method is static, and the singleton-
  * pattern is being used.
  */

@@ -3,8 +3,8 @@ package application;
 /*
  * This class is creating methods for mathematical calculations.
  * When calculating the mortgage, we need to be able to calculate
- * the exponential, as well as rounding off values. Also
- * this class has clear methods, and its purpose will not change.
+ * the exponent, as well as rounding off values. Also
+ * this class has a limited purpose that will not change.
  * That is why the methods are static, and the singleton-
  * pattern is implemented.
  */
@@ -42,7 +42,7 @@ public class MathUtil {
 	}
 	
 	/*
-	 * This method is rounding of numbers to to numbers without digits.
+	 * This method is rounding of numbers to other numbers without digits.
 	 */
 	
 	public static int roundOf(double num) {

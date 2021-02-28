@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /*
- * This class is putting all the logic together.
- *
+ * This class is putting all the logic together, and printing
+ * the results.
  */
 
 public class DataController {
@@ -27,7 +27,7 @@ public class DataController {
 	 * Constructor for initiating the class. The methods in this class are directly
 	 * called from the constructor, when the application is starting.
 	 * The constructor is creating an object of CustomerData, without parameters.
-	 * That object is needed inThe init-method, for accessing the fromString-method
+	 * That object is needed in the init-method, for accessing the fromString-method
 	 * in the CutomerData-class.
 	 */
 
@@ -38,6 +38,14 @@ public class DataController {
 		printData(dataList);
 	}
 
+	/*
+	* The only purpose of this getter is accessing the List in
+	* the DataControllerTest-class, for assuring it is containing correct
+	* information after the method initData.
+	*/
+	public List<CustomerData>  getDataList(){
+		return this.dataList;
+	}
 	/*
 	 * This method is calling the getLines-method in FileUtil, for accessing the
 	 * text-document. It is then calling the fromString-method in CustomerData,
@@ -72,7 +80,7 @@ public class DataController {
 
 	/*
 	 * In this method, the calculateMonthlyPayments()-method is called. It is done
-	 * inside a for-loop, that is iterating through list with customer-data. For
+	 * inside a for-loop, that is iterating through a list with CustomerData-objects. For
 	 * every customer, the calculations are made. Finally, it is storing the data in
 	 * a StringBuffer, and printing.
 	 */

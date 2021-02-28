@@ -10,6 +10,11 @@ import static org.junit.Assert.assertTrue;
  */
 public class FileUtilTest {
 	private List<String> testList;
+
+	/*
+	*This method is testing the parsing of the text-file, as well
+	* as assuring that it is done correctly, by checking an example-line.
+	 */
 	
 	@Test
 	public void testGetLines() {

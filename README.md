@@ -5,10 +5,10 @@ their monthly payment according to this formula:
 E = U[b(1 + b)^p]/[(1 + b)^p - 1],
 where:
 
-E = Fixed monthly payment
-b = Interest on a monthly basis 
-U = Total loan
-p = Number of payments
+E = Fixed monthly payment,
+b = Interest on a monthly basis, 
+U = Total loan and
+p = Number of payments.
 
 The project written in Java, build, run and tested with Gradle.
 

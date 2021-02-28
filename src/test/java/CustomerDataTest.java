@@ -1,7 +1,11 @@
 import application.CustomerData;
 import org.junit.Test;
-
 import static org.junit.Assert.assertTrue;
+
+/*
+*This class is providing a test-method for testing the only
+* method in the CustomerData-class.
+ */
 public class CustomerDataTest {
 	CustomerData cd;
 	private String customer;
@@ -18,5 +22,4 @@ public class CustomerDataTest {
 		assertTrue(cd.fromString(testString).getInterest() ==5);
 		assertTrue(cd.fromString(testString).getYears() ==2);
 	}
-
 }

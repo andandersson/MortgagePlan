@@ -12,7 +12,7 @@ p = Number of payments.
 
 The project written in Java, build, run and tested with Gradle.
 
-In order to run the code application, You need a Java Virtual Machine
+In order to run the application, You need a Java Virtual Machine
 installed on Your computer. You also need Gradle installed. Once
 You have forked the sourcecode, The application is started from the 
 MainApp.class, which is found in the path MortgagePlan/main/java/application/

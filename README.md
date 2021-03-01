@@ -4,7 +4,8 @@ This is an application for creating a mortgage plan. Customers for
 a bank want to borrow money, for a certain amount of years, and
 pay off their debt every month with a certain interest rate. The application is calculating
 their monthly payment according to the amount of their loan, interest
-rate, and years for the loan.
+rate, and years for the loan. Information about the customers and their loans
+is found in the text-file "Prospects".
 
 
 **Tools**

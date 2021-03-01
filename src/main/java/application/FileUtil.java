@@ -6,43 +6,33 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-/*The only purpose of this class is scanning the text-file.
+/**
+ * The only purpose of this class is scanning the text-file.
  * Since there are only one method, and the purpose of the class
  * will not change, it is of no reason to create objects outside
  * the class.
  * That is why the only method is static, and the singleton-
  * pattern is being used.
  */
+public final class FileUtil {
 
-public class FileUtil {
-	private static Scanner scan;
-	private static String temp;
-	private static String tempChar;
-	private static FileUtil file = new FileUtil();
 
-	/*
-	A private constructor for implementing the singleton-pattern
+	/**
+	 * A private constructor
+	 * for implementing the singleton-pattern
 	 */
-
 	private FileUtil(){
 	}
 
-	/*
-	* A static getter for returning the only instance of this class.
-	 */
-	public static FileUtil getFile(){
-		return file;
-	}
-
-	/*
+	/**
 	 * This method is scanning the text-file, and storing it in
 	 * a List.
-	 *
 	 */
-
-	public static List<String> getLines(String filepath) {
+	public static List<String> getLines(String filepath) throws FileNotFoundException{
+		Scanner scan;
+		String temp;
+		String tempChar;
 		List dataList = new ArrayList<>();
-		try {
 			scan = new Scanner(new File(filepath));
 			scan.useDelimiter("\n");
 			scan.hasNextLine();
@@ -57,10 +47,6 @@ public class FileUtil {
 				dataList.add(temp);
 			}
 			scan.close();
-		}
-		catch (FileNotFoundException e) {
-			e.printStackTrace();
-		}
 		return dataList;
 	}
 }

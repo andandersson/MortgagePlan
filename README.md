@@ -12,6 +12,7 @@ rate, and years for the loan.
 The project written in Java, build, run and tested with Gradle.
 
 **Requirements**
+
 In order to run the application, You need a Java Virtual Machine
 installed on Your computer. You also need Gradle installed. Once
 You have forked the sourcecode, The application is started from the 
